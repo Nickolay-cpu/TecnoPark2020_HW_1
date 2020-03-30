@@ -50,6 +50,7 @@ public class NumbersAdapter extends RecyclerView.Adapter<NumbersHolder> {
         return kolNum;
     }
 
+    // Update 1
     void addItem(int position) {
         kolNum = position;
     }

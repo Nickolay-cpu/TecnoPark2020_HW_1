@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 i++;
-                numbersAdapter.addItem(i);
+                numbersAdapter.addItem(i); // Update 1
                 numberGrid.scrollToPosition(numberGrid.getAdapter().getItemCount() - 1);
             }
         });
