@@ -10,8 +10,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import java.util.Objects;
-
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView numberGrid;
@@ -45,9 +43,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 i++;
-                numbersAdapter = new NumbersAdapter(i);
-                numberGrid.setAdapter(numbersAdapter);
-                numberGrid.scrollToPosition(Objects.requireNonNull(numberGrid.getAdapter()).getItemCount() - 1);
+                numbersAdapter.addItem(i);
+                numberGrid.scrollToPosition(numberGrid.getAdapter().getItemCount() - 1);
             }
         });
 

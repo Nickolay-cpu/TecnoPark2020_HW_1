@@ -49,4 +49,8 @@ public class NumbersAdapter extends RecyclerView.Adapter<NumbersHolder> {
     public int getItemCount() {
         return kolNum;
     }
+
+    void addItem(int position) {
+        kolNum = position;
+    }
 }
