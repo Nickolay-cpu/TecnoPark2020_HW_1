@@ -50,8 +50,9 @@ public class NumbersAdapter extends RecyclerView.Adapter<NumbersHolder> {
         return kolNum;
     }
 
-    // Update 1
+    // Update 2
     void addItem(int position) {
         kolNum = position;
+        notifyItemInserted(kolNum);
     }
 }
